@@ -26,20 +26,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   
-  <link rel="stylesheet" href="style.css?v=5" />
+  <!-- Clean Relative Stylesheet Link -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Fixed Background Canvas for Smooth Frame Animation -->
-  <div class="canvas-wrapper">
-    <canvas id="animation-canvas"></canvas>
+  <!-- Fixed Static Background Image with Cinematic Overlay -->
+  <div class="static-bg-wrapper">
+    <img src="images/background.jpg" alt="Krishan Narayan Sharma - MBA Marketing & Business Analytics" class="static-bg-img" />
     <!-- Cinematic Vignette & Ambient Spotlight Overlay -->
     <div class="canvas-overlay"></div>
-  </div>
-
-  <!-- Loading Indicator -->
-  <div id="loader-status" class="loader-status" aria-live="polite">
-    <div class="loader-spinner"></div>
-    <span id="loader-text">Loading frames 0%</span>
   </div>
 
   <!-- Scrollable Portfolio Content Layer -->
@@ -48,6 +43,9 @@
     <!-- Top Navigation / Magazine Header -->
     <header class="top-nav" id="home">
       <div class="nav-left">
+        <div class="nav-logo-box">
+          <img src="images/iilm_logo.jpg" alt="IILM University Logo" class="nav-logo-img" />
+        </div>
         <a href="#home" class="nav-brand">KRISHAN NARAYAN SHARMA</a>
         <span class="nav-divider">|</span>
         <span class="nav-subtag">MBA • MARKETING & BUSINESS ANALYTICS</span>
@@ -64,7 +62,7 @@
       </div>
     </header>
 
-    <!-- Sub-Navbar Navigation Bar (Matching Assignment Sections) -->
+    <!-- Sub-Navbar Navigation Bar (Matching All Assignment & Media Sections) -->
     <nav class="sub-nav-bar">
       <ul class="sub-nav-links">
         <li><a href="#about-me">About Me</a></li>
@@ -75,7 +73,8 @@
         <li><a href="#competitions">Achievements</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#career-direction">Career Direction</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#prompt-screen">Prompt Screen</a></li>
+        <li><a href="#resume">Evidence Hub</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -108,14 +107,20 @@
           </div>
         </div>
 
-        <!-- Center Empty Spacer to Let The Animated Video Portrait Scrub Through -->
+        <!-- Center Empty Spacer to Let The Cinematic Static Background Showcase -->
         <div class="hero-center-spacer"></div>
 
         <!-- Right Hero Column -->
         <div class="hero-col hero-right">
           <div class="author-block">
-            <h2 class="author-name">KRISHAN NARAYAN<br />SHARMA</h2>
-            <span class="author-role">MBA — MARKETING & BUSINESS ANALYTICS</span>
+            <!-- Author Header with Profile Photo Avatar -->
+            <div class="author-header-flex">
+              <img src="images/profile_photo.jpg" alt="Krishan Narayan Sharma" class="author-avatar-img" />
+              <div>
+                <h2 class="author-name">KRISHAN NARAYAN<br />SHARMA</h2>
+                <span class="author-role">MBA — MARKETING & BUSINESS ANALYTICS</span>
+              </div>
+            </div>
             <span class="author-edu">IILM University, Greater Noida • Enrollment: 25SOM2039000019</span>
             <p class="author-desc">
               Hard-working, optimistic, and passionate professional specializing in Marketing and Analytics. Leveraging hands-on field sales experience at ITC Limited (PCP Division) and technical mastery in Power BI and Advanced Excel.
@@ -159,14 +164,15 @@
     <!-- SECTION 1: ABOUT ME (Beyond Academics & Values) -->
     <section class="content-section" id="about-me">
       <div class="section-header">
-        <h3 class="section-title">ABOUT ME — MY STORY, VALUES & PASSIONS</h3>
+        <h3 class="section-title">ABOUT ME — STORY, PASSION & CORE VALUES</h3>
       </div>
-      <div class="card about-story-card">
+      
+      <div class="card card-about">
         <div class="about-story-grid">
-          <div class="about-story-main">
-            <h4 class="story-heading">WHO I AM BEYOND MY DEGREE</h4>
+          <div class="about-bio-text">
+            <h4>Bridging FMCG Ground Realities with Strategic Business Analytics</h4>
             <p>
-              Growing up in Rajasthan, I developed an early fascination with how commerce functions at the grassroots level — observing neighborhood retail grocers, local supply networks, and the relationships that keep everyday trade moving. After completing my <strong>Bachelor of Science (B.Sc.) at Rajasthan University</strong>, I chose to pursue an <strong>MBA in Marketing & Business Analytics at IILM University, Greater Noida</strong> to bridge empirical curiosity with modern quantitative tools.
+              I am an MBA candidate at <strong>IILM University, Greater Noida</strong> specializing in <strong>Marketing & Business Analytics</strong>. My academic journey is grounded in an enduring curiosity about how products move through retail ecosystems and how complex data can be converted into high-converting commercial decisions. With a foundational background in <strong>Bachelor of Science (B.Sc.)</strong>, I naturally combine systematic scientific thinking with modern quantitative tools.
             </p>
             <p>
               What makes my perspective distinctive is the blend of <strong>on-the-ground market grit</strong> and <strong>analytical precision</strong>. During my summer internship with ITC Limited in Rajgarh, Alwar, I spent months walking market lanes, surveying shopkeepers, and learning firsthand how inventory bottlenecks impact revenue. I don't just analyze numbers behind a screen — I understand the human behavior and distributor logistics behind every data point.
@@ -221,7 +227,7 @@
             <h4 class="itc-main-title">Sales Intern — Field Operations & Channel Optimization</h4>
             <div class="itc-sub-info">
               <span>📍 Location: Rajgarh, Alwar (Rajasthan)</span>
-              <span>🗓️ Period: 25th May 2026 – 25th July 2026</span>
+              <span>📅 Period: 25th May 2026 – 25th July 2026</span>
               <span>👤 Industry Mentor: Mr. Kapil Gupta (Area Executive, ITC)</span>
               <span>🎓 Faculty Guide: Prof. Shahzeb Syed (IILM University)</span>
             </div>
@@ -345,34 +351,35 @@
         <div class="card card-project-item">
           <div class="project-header-bar bar-analytics">
             <span class="proj-cat">BUSINESS INTELLIGENCE</span>
-            <span class="proj-date">2026</span>
+            <span class="proj-date">Industry Certification</span>
           </div>
           <div class="project-content">
-            <h4>HCL Tech: Real-Life Enterprise Data Analytics</h4>
-            <span class="proj-client">Certified Project Submission</span>
+            <h4>HCL Tech: Commercial Intelligence & KPI Dashboards</h4>
+            <span class="proj-client">Corporate Live-Project Simulation</span>
             <div class="proj-breakdown">
-              <p><strong>Problem:</strong> Multi-regional sales data scattered across disparate tables requiring relational synthesis and executive visualization.</p>
-              <p><strong>My Role:</strong> Individual Project Contributor. Managed data ingestion, ETL cleaning, relational data modeling, and DAX metric formulation.</p>
-              <p><strong>Output:</strong> Interactive Power BI dashboard with slicers for regional performance, product category drilldowns, and profit variance charts.</p>
-              <p><strong>What I Learned:</strong> Clean data modeling and schema design are 80% of successful business intelligence; visual storytelling drives decision speed.</p>
+              <p><strong>Problem:</strong> Raw multi-region enterprise transaction tables required interactive dashboards to surface branch underperformance.</p>
+              <p><strong>My Role:</strong> BI Developer. Conducted ETL processes, established star-schema relationships, and created custom DAX calculations.</p>
+              <p><strong>Output:</strong> Multi-tab interactive Power BI report with dynamic slicers for regional sales, margin trends, and top customer segments.</p>
+              <p><strong>What I Learned:</strong> Effective visualization is about storytelling; executive users prioritize high-contrast summary cards over cluttered tables.</p>
             </div>
             <div class="project-tags">
               <span>Power BI</span>
               <span>DAX Measures</span>
-              <span>Data Storytelling</span>
+              <span>Star Schema</span>
+              <span>Data Modeling</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 3: Design Thinking Empathy Mapping -->
+        <!-- Project 3: Social Immersion Project -->
         <div class="card card-project-item">
           <div class="project-header-bar bar-strategy">
             <span class="proj-cat">SOCIAL INNOVATION</span>
-            <span class="proj-date">Academic Fieldwork</span>
+            <span class="proj-date">IILM Immersion</span>
           </div>
           <div class="project-content">
-            <h4>Design Thinking & Grassroots Entrepreneurship</h4>
-            <span class="proj-client">Field-Based Community Project</span>
+            <h4>Social Immersion: Empathy Mapping & Livelihood Strategy</h4>
+            <span class="proj-client">Grassroots Field-Based Assessment</span>
             <div class="proj-breakdown">
               <p><strong>Problem:</strong> Addressing economic vulnerability and lack of livelihood sustainability within an underprivileged community.</p>
               <p><strong>My Role:</strong> Field Investigator & Strategy Designer. Conducted in-depth, in-person empathy interviews and mapped community pain points.</p>
@@ -538,16 +545,16 @@
         <div class="card achievement-card">
           <div class="achieve-icon">🏆</div>
           <div class="achieve-content">
-            <h4>ITC Limited Summer Internship Selection</h4>
-            <span class="achieve-sub">Competitive Corporate Internship Placement (2026)</span>
-            <p>Selected for ITC’s competitive sales internship program in the Personal Care Products division, successfully delivering field market surveys and the "Reduction in Bronze Stockists" project.</p>
+            <h4>ITC Summer Internship Project Excellence</h4>
+            <span class="achieve-sub">PCP Division Field Contribution</span>
+            <p>Formulated concrete strategies to reduce bronze stockists, earning official recognition from ITC Area Executive Mr. Kapil Gupta for field diligence and distributor synchronization.</p>
           </div>
         </div>
 
         <div class="card achievement-card">
-          <div class="achieve-icon">📜</div>
+          <div class="achieve-icon">⭐</div>
           <div class="achieve-content">
-            <h4>KPMG Lean Six Sigma Certification</h4>
+            <h4>KPMG Lean Six Sigma Green Belt Certification</h4>
             <span class="achieve-sub">Process Improvement & Statistical Problem Solving</span>
             <p>Completed intensive 5-day certification course by KPMG, mastering DMAIC problem-solving frameworks, root-cause investigation, and waste elimination techniques.</p>
           </div>
@@ -724,12 +731,81 @@
       </div>
     </section>
 
-    <!-- SECTION 10: RESUME HUB -->
-    <section class="content-section" id="resume">
-      <div class="section-header">
-        <h3 class="section-title">RESUME — VIEW & DOWNLOAD</h3>
+    <!-- SECTION 10: DESIGN INSPIRATION & PROMPT SCREEN (User Requested Blueprint Feature) -->
+    <section class="content-section" id="prompt-screen">
+      <div class="section-header work-header">
+        <h3 class="section-title">DESIGN INSPIRATION & PROMPT SCREEN</h3>
+        <span class="view-more-tag">Creative UI Reference & Architecture</span>
       </div>
 
+      <div class="card prompt-showcase-card">
+        <div class="prompt-showcase-header">
+          <div>
+            <div class="prompt-badge">DESIGN BLUEPRINT & CREATIVE PROMPT</div>
+            <h4>ORIGINAL PINTEREST UI DESIGN PROMPT & INSPIRATION SCREEN</h4>
+            <p>
+              The creative direction of this portfolio was inspired by this editorial dark-mode portfolio concept ("Build a $5,000 Animated Portfolio..."). We transformed the visual archetype into an authentic, academically rigorous MBA personal brand portfolio, maintaining the magazine typography, bold high-contrast hierarchy, and cinematic static background while replacing placeholder concepts with genuine ITC field data, academic case studies, and verified certifications.
+            </p>
+          </div>
+        </div>
+
+        <div class="prompt-image-frame">
+          <img src="images/prompt_screen.png" alt="Design Inspiration & Prompt Screen - Build a $5,000 Animated Portfolio" class="prompt-screen-img" />
+        </div>
+
+        <div class="prompt-caption-bar">
+          <span><strong>Prompt Reference:</strong> High-impact editorial portfolio design reference (Screenshot 2026-11-12 022925.png) featuring bold typography and dark cinematic aesthetic.</span>
+          <a href="images/prompt_screen.png" target="_blank" class="btn-prompt-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open Full-Resolution Prompt Screen ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: RESUME & VERIFIED EVIDENCE PREVIEW HUB -->
+    <section class="content-section" id="resume">
+      <div class="section-header work-header">
+        <h3 class="section-title">RESUME & VERIFIED EVIDENCE HUB</h3>
+        <span class="view-more-tag">Official Academic & Career Documentation</span>
+      </div>
+
+      <!-- Evidence Document Previews Grid (CV Preview + Coursework Rubric Brief) -->
+      <div class="resume-evidence-grid">
+        <!-- Card 1: Official CV Preview -->
+        <div class="card evidence-preview-card">
+          <div class="evidence-badge">OFFICIAL DOCUMENT PREVIEW</div>
+          <h4>Official Curriculum Vitae (Page 1)</h4>
+          <p>
+            Verified academic milestones at IILM University, field sales internship credentials at ITC Limited (PCP Division), and technical skills in Power BI, Advanced Excel, and DMAIC.
+          </p>
+          <div class="evidence-img-frame">
+            <img src="images/cv_preview.jpg" alt="Curriculum Vitae Preview - Krishan Narayan Sharma" class="evidence-thumb-img" />
+          </div>
+          <div class="prompt-caption-bar" style="margin-top: 14px; padding: 10px 14px; background: rgba(0, 0, 0, 0.4); border-radius: 6px;">
+            <span style="font-size: 0.82rem; color: #b8b8b8;">PDF Document Preview • Page 1</span>
+            <a href="Krishan_Narayan_Sharma_CV.pdf" target="_blank" class="btn-prompt-view">View Full PDF ↗</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Assignment Brief Rubric Preview -->
+        <div class="card evidence-preview-card">
+          <div class="evidence-badge">ACADEMIC BRIEF & RUBRIC</div>
+          <h4>MBA DSMM Course Assignment Brief</h4>
+          <p>
+            The official 25-mark evaluation guidelines issued by Dr. Pooja Sharma covering positioning statement, SIP, projects, case studies, immersions, achievements, and GA4 integration.
+          </p>
+          <div class="evidence-img-frame">
+            <img src="images/assignment_brief.jpg" alt="MBA DSMM Course Assignment Brief - Dr. Pooja Sharma" class="evidence-thumb-img" />
+          </div>
+          <div class="prompt-caption-bar" style="margin-top: 14px; padding: 10px 14px; background: rgba(0, 0, 0, 0.4); border-radius: 6px;">
+            <span style="font-size: 0.82rem; color: #b8b8b8;">Academic Rubric • Course Brief</span>
+            <a href="images/assignment_brief.jpg" target="_blank" class="btn-prompt-view">Open Full Brief ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume Download & Action Card -->
       <div class="card resume-hub-card">
         <div class="resume-hub-left">
           <div class="resume-icon">📄</div>
@@ -746,23 +822,23 @@
           </a>
           <a href="Krishan_Narayan_Sharma_CV.pdf" download="Krishan_Narayan_Sharma_CV.pdf" class="btn-primary-glow">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            DOWNLOAD PDF
+            DOWNLOAD CV (PDF)
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Assignment Requirement: Analytics & Privacy Notice -->
-    <section class="content-section privacy-notice-section">
-      <div class="card privacy-card">
-        <h5>ANALYTICS SETUP & TRANSPARENCY NOTICE</h5>
-        <p>
-          This personal portfolio is created as an academic assignment for the <strong>Digital and Social Media Marketing (DSMM)</strong> course (MBA Semester III, IILM University, under faculty guidance of Dr. Pooja Sharma). To measure site engagement and study user navigation flows, this website is integrated with <strong>Google Analytics 4 (GA4)</strong> and verified on <strong>Google Search Console</strong>. No sensitive personal visitor data or passwords are collected. All internship data reflects public and mentor-approved academic summaries.
+    <!-- SECTION 12: ANALYTICS NOTICE & TRANSPARENCY -->
+    <section class="content-section">
+      <div class="card notice-card">
+        <div class="notice-badge">ACADEMIC AUDIT TRANSPARENCY</div>
+        <p class="notice-text">
+          <strong>Assignment Compliance Note:</strong> In accordance with the Digital and Social Media Marketing (DSMM) rubric evaluated by Dr. Pooja Sharma, this portfolio has been instrumented with <strong>Google Analytics 4 (GA4)</strong> event tracking and configured for <strong>Google Search Console (GSC)</strong> indexing verification. All visitor metrics, dwell times, and engagement flows are logged strictly for educational assessment and performance analysis.
         </p>
       </div>
     </section>
 
-    <!-- SECTION 11: FOOTER & CONTACT -->
+    <!-- SECTION 13: FOOTER & CONTACT -->
     <footer class="content-section footer-section" id="contact">
       <div class="footer-top">
         <div class="footer-left">
@@ -848,6 +924,7 @@
 
   </div>
 
-  <script src="script.js?v=5"></script>
+  <!-- Clean Relative Script Link -->
+  <script src="script.js"></script>
 </body>
 </html>
