@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishan Narayan Sharma — Personal Brand & Career Portfolio | MBA (Marketing & Analytics)</title>
+  
+  <!-- Academic Assessment Metadata: Google Sites Assignment | MBA Semester III | DSMM | Dr. Pooja Sharma -->
+  <meta name="author" content="Krishan Narayan Sharma" />
+  <meta name="description" content="Personal Brand and Career Portfolio of Krishan Narayan Sharma. MBA in Marketing & Business Analytics, IILM University Greater Noida. Featuring ITC Limited SIP, Power BI, Advanced Excel, and strategic case studies." />
+  
+  <!-- Google Search Console Ownership Verification (Assignment Rubric Requirement) -->
+  <meta name="google-site-verification" content="GSC-VERIFICATION-CODE-PLACEHOLDER" />
+
+  <!-- Google Analytics 4 (GA4) Tracking Setup (Assignment Rubric Requirement) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT-ID-PLACEHOLDER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT-ID-PLACEHOLDER');
+  </script>
+
+  <!-- Google Fonts: Bebas Neue, Cormorant Garamond, Plus Jakarta Sans, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+  <!-- Fixed Background Canvas for Smooth Frame Animation -->
+  <div class="canvas-wrapper">
+    <canvas id="animation-canvas"></canvas>
+    <!-- Cinematic Vignette & Ambient Spotlight Overlay -->
+    <div class="canvas-overlay"></div>
+  </div>
+
+  <!-- Loading Indicator -->
+  <div id="loader-status" class="loader-status" aria-live="polite">
+    <div class="loader-spinner"></div>
+    <span id="loader-text">Loading frames 0%</span>
+  </div>
+
+  <!-- Scrollable Portfolio Content Layer -->
+  <div class="page-container">
+    
+    <!-- Top Navigation / Magazine Header -->
+    <header class="top-nav" id="home">
+      <div class="nav-left">
+        <a href="#home" class="nav-brand">KRISHAN NARAYAN SHARMA</a>
+        <span class="nav-divider">|</span>
+        <span class="nav-subtag">MBA • MARKETING & BUSINESS ANALYTICS</span>
+      </div>
+      <div class="nav-right">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span class="nav-tag">OPEN TO OPPORTUNITIES</span>
+        </div>
+        <a href="Krishan_Narayan_Sharma_CV.pdf" download="Krishan_Narayan_Sharma_CV.pdf" class="btn-cv-download">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          DOWNLOAD CV
+        </a>
+      </div>
+    </header>
+
+    <!-- Sub-Navbar Navigation Bar (Matching Assignment Sections) -->
+    <nav class="sub-nav-bar">
+      <ul class="sub-nav-links">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#sip">SIP (ITC)</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#immersions">Immersions</a></li>
+        <li><a href="#competitions">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#career-direction">Career Direction</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Header: Giant PORTFOLIO Headline -->
+    <section class="hero-section">
+      <div class="hero-title-wrap">
+        <h1 class="main-title">PORTFOLIO</h1>
+      </div>
+
+      <!-- Hero Two-Column Layout -->
+      <div class="hero-grid">
+        <!-- Left Hero Column -->
+        <div class="hero-col hero-left">
+          <div class="role-badge-wrap">
+            <h2 class="role-title">MARKETING & ANALYTICS</h2>
+            <div class="role-subtags">
+              <span>BUSINESS ANALYTICS</span>
+              <span>FMCG SALES STRATEGY</span>
+              <span>DIGITAL & SOCIAL MEDIA MARKETING</span>
+            </div>
+          </div>
+
+          <div class="hero-quote-block">
+            <span class="quote-mark">“</span>
+            <p class="quote-text">
+              I STRIVE TO CONTRIBUTE EFFECTIVELY BY COMBINING BUSINESS ACUMEN WITH ADVANCED ANALYTICS TO SOLVE REAL-WORLD CHALLENGES.
+            </p>
+            <div class="signature">Krishan Narayan Sharma</div>
+          </div>
+        </div>
+
+        <!-- Center Empty Spacer to Let The Animated Video Portrait Scrub Through -->
+        <div class="hero-center-spacer"></div>
+
+        <!-- Right Hero Column -->
+        <div class="hero-col hero-right">
+          <div class="author-block">
+            <h2 class="author-name">KRISHAN NARAYAN<br />SHARMA</h2>
+            <span class="author-role">MBA — MARKETING & BUSINESS ANALYTICS</span>
+            <span class="author-edu">IILM University, Greater Noida • Enrollment: 25SOM2039000019</span>
+            <p class="author-desc">
+              Hard-working, optimistic, and passionate professional specializing in Marketing and Analytics. Leveraging hands-on field sales experience at ITC Limited (PCP Division) and technical mastery in Power BI and Advanced Excel.
+            </p>
+            <div class="contact-quick-pills">
+              <a href="tel:7296809944" class="quick-pill">📞 +91 7296809944</a>
+              <a href="mailto:krishan.narayan.gnmba27@iilm.edu" class="quick-pill">✉️ krishan.narayan.gnmba27@iilm.edu</a>
+              <span class="quick-pill">📍 Greater Noida, UP / Alwar, Rajasthan</span>
+            </div>
+          </div>
+
+          <!-- Stats / Key Credentials Row -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-num">ITC</span>
+              <span class="stat-label">SALES INTERN<br />PCP DIVISION</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">KPMG</span>
+              <span class="stat-label">LEAN SIX SIGMA<br />CERTIFIED</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">IIM</span>
+              <span class="stat-label">SIRMAUR<br />IMMERSION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assignment Requirement: Official Positioning Statement Banner -->
+    <section class="content-section positioning-section">
+      <div class="card positioning-card">
+        <div class="positioning-badge">CAREER POSITIONING STATEMENT</div>
+        <p class="positioning-statement">
+          “ I am interested in <strong>Marketing and Business Analytics</strong>, with a special focus on <strong>FMCG distribution, retail sales strategy, and business intelligence</strong>. Through my <strong>Summer Internship at ITC Limited</strong>, intensive <strong>Power BI & Advanced Excel modeling</strong>, and <strong>Lean Six Sigma certification by KPMG</strong>, I have developed strong analytical, problem-solving, and channel execution strengths. I want to contribute to <strong>growth-oriented consumer and analytical organizations</strong> by turning field realities and complex data into actionable distribution strategies and measurable performance. ”
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: ABOUT ME (Beyond Academics & Values) -->
+    <section class="content-section" id="about-me">
+      <div class="section-header">
+        <h3 class="section-title">ABOUT ME — MY STORY, VALUES & PASSIONS</h3>
+      </div>
+      <div class="card about-story-card">
+        <div class="about-story-grid">
+          <div class="about-story-main">
+            <h4 class="story-heading">WHO I AM BEYOND MY DEGREE</h4>
+            <p>
+              Growing up in Rajasthan, I developed an early fascination with how commerce functions at the grassroots level — observing neighborhood retail grocers, local supply networks, and the relationships that keep everyday trade moving. After completing my <strong>Bachelor of Science (B.Sc.) at Rajasthan University</strong>, I chose to pursue an <strong>MBA in Marketing & Business Analytics at IILM University, Greater Noida</strong> to bridge empirical curiosity with modern quantitative tools.
+            </p>
+            <p>
+              What makes my perspective distinctive is the blend of <strong>on-the-ground market grit</strong> and <strong>analytical precision</strong>. During my summer internship with ITC Limited in Rajgarh, Alwar, I spent months walking market lanes, surveying shopkeepers, and learning firsthand how inventory bottlenecks impact revenue. I don't just analyze numbers behind a screen — I understand the human behavior and distributor logistics behind every data point.
+            </p>
+          </div>
+
+          <div class="about-pillars-box">
+            <h5 class="pillars-heading">CORE VALUES & PRINCIPLES</h5>
+            <div class="pillar-item">
+              <div class="pillar-icon">🤝</div>
+              <div>
+                <strong>Altruism & Collaborative Empathy:</strong>
+                <span>Committed to supporting peers, understanding ground-level retail partners, and designing solutions that benefit the broader community.</span>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">⚡</div>
+              <div>
+                <strong>Optimistic Resilience:</strong>
+                <span>Approaching market friction, stockist reluctance, or complex data errors with energy, curiosity, and a solution-first mindset.</span>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">📊</div>
+              <div>
+                <strong>Fact-Based Objectivity:</strong>
+                <span>Grounding strategic choices in verified data, rigorous testing, and structured root-cause analysis (DMAIC).</span>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">🏏</div>
+              <div>
+                <strong>Interests Beyond Academics:</strong>
+                <span>Cricket enthusiast (strategic team plays), grassroots community problem-solving, photography, and exploring local consumer markets.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SUMMER INTERNSHIP PROGRAMME (SIP) — ITC LIMITED -->
+    <section class="content-section" id="sip">
+      <div class="section-header">
+        <h3 class="section-title">SUMMER INTERNSHIP PROGRAMME (SIP) — ITC LIMITED</h3>
+      </div>
+      
+      <div class="itc-detailed-card card">
+        <div class="itc-card-top">
+          <div class="itc-meta">
+            <span class="itc-org">ITC LIMITED • PERSONAL CARE PRODUCTS (PCP) DIVISION</span>
+            <h4 class="itc-main-title">Sales Intern — Field Operations & Channel Optimization</h4>
+            <div class="itc-sub-info">
+              <span>📍 Location: Rajgarh, Alwar (Rajasthan)</span>
+              <span>🗓️ Period: 25th May 2026 – 25th July 2026</span>
+              <span>👤 Industry Mentor: Mr. Kapil Gupta (Area Executive, ITC)</span>
+              <span>🎓 Faculty Guide: Prof. Shahzeb Syed (IILM University)</span>
+            </div>
+          </div>
+          <div class="itc-brands-box">
+            <span class="itc-brand-label">BRANDS & DIVISIONS MANAGED</span>
+            <div class="brand-pills">
+              <span class="brand-pill">VIVEL</span>
+              <span class="brand-pill">SAVLON</span>
+              <span class="brand-pill">SUPERIA</span>
+              <span class="brand-pill">ENGAGE</span>
+              <span class="brand-pill yippee-pill">YIPPEE NOODLES (₹5 Drive)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Pillar Academic Structure for SIP (Context, Contribution, Evidence, Outcome) -->
+        <div class="sip-pillars-grid">
+          
+          <div class="sip-pillar-card">
+            <div class="pillar-badge">1. CONTEXT</div>
+            <h5>Market Landscape & Objectives</h5>
+            <p>
+              Undertaken as part of the MBA curriculum at ITC's PCP division in Rajgarh, Alwar. The objective was to diagnose retail distribution gaps, understand retailer reluctance, and tackle the recurring issue of underperforming stockists lapsing into the inactive "Bronze" tier.
+            </p>
+          </div>
+
+          <div class="sip-pillar-card">
+            <div class="pillar-badge">2. MY CONTRIBUTION</div>
+            <h5>Field Operations & Strategy</h5>
+            <p>
+              Conducted daily in-person retail market visits, performed territory outlet mapping, executed structured surveys with shopkeepers to identify credit/delivery issues, tracked order fulfillment with distributor logistics, and pushed slow-moving SKUs (₹5 Yippee) using bundled discount schemes.
+            </p>
+          </div>
+
+          <div class="sip-pillar-card">
+            <div class="pillar-badge">3. EVIDENCE</div>
+            <h5>SIP Project & Frameworks</h5>
+            <p>
+              Flagship Project Report: <em>“Reduction in Bronze Stockists: Enhancing Sales Performance of ITC’s PCP Products”</em> (Enrollment: 25SOM2039000019). Survey tools, stockist tier matrices (Gold, Silver, Bronze), and daily sales visit records submitted and approved by ITC Area Executive.
+            </p>
+          </div>
+
+          <div class="sip-pillar-card">
+            <div class="pillar-badge">4. OUTCOME & LEARNING</div>
+            <h5>Key Insights & Personal Growth</h5>
+            <p>
+              Learned that delivery delays and lack of guaranteed sell-through were the primary drivers of stockist lapse. Proved that tighter distributor delivery synchronization paired with micro-incentives significantly accelerates retail reordering. This solidified my passion for channel sales and retail analytics.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Methodology Breakdown -->
+        <div class="itc-methodology-box">
+          <h5 class="itc-detail-heading">FIELD METHODOLOGY & STEP-BY-STEP IMPLEMENTATION</h5>
+          <div class="methodology-steps">
+            <div class="m-step">
+              <span class="m-num">01</span>
+              <div>
+                <strong>Outlet-by-Outlet Territory Mapping:</strong> Mapped retail stores across Rajgarh, categorizing counters into actively stocked versus irregular/non-stocking outlets.
+              </div>
+            </div>
+            <div class="m-step">
+              <span class="m-num">02</span>
+              <div>
+                <strong>Structured Retailer Surveys:</strong> Diagnosed specific barriers including distributor visit frequency, distributor credit terms, shelf-space competition, and localized brand preferences.
+              </div>
+            </div>
+            <div class="m-step">
+              <span class="m-num">03</span>
+              <div>
+                <strong>Performance Tiering:</strong> Classified accounts into Gold, Silver, and Bronze tiers based on order frequency and average basket size to prioritize follow-up visits.
+              </div>
+            </div>
+            <div class="m-step">
+              <span class="m-num">04</span>
+              <div>
+                <strong>Order Follow-Through & Incentive Schemes:</strong> Tracked deliveries end-to-end with the local distributor to prevent stock-outs, utilizing bundled schemes to push trial packs.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: ACADEMIC & APPLIED PROJECTS (Problem, Role, Output, Learning) -->
+    <section class="content-section" id="projects">
+      <div class="section-header work-header">
+        <h3 class="section-title">PROJECTS — ACADEMIC, INDEPENDENT & APPLIED</h3>
+        <span class="view-more-tag">Problem • Role • Output • Learning</span>
+      </div>
+
+      <div class="projects-master-grid">
+        
+        <!-- Project 1: FreshMart Balanced Scorecard -->
+        <div class="card card-project-item">
+          <div class="project-header-bar bar-analytics">
+            <span class="proj-cat">RETAIL ANALYTICS</span>
+            <span class="proj-date">MBA Sem III</span>
+          </div>
+          <div class="project-content">
+            <h4>FreshMart: Multi-Perspective Balanced Scorecard</h4>
+            <span class="proj-client">Academic Analytics Project (Excel Modeling)</span>
+            <div class="proj-breakdown">
+              <p><strong>Problem:</strong> Fragmented retail store metrics without unified visibility into customer satisfaction, inventory turnover, and profitability.</p>
+              <p><strong>My Role:</strong> Lead Analyst. Designed dynamic Excel models consolidating 4 perspectives (Financial, Customer, Internal Processes, Learning & Growth).</p>
+              <p><strong>Output:</strong> Automated KPI dashboards tracking gross margin, customer retention rates, order fulfillment cycle times, and training ROI.</p>
+              <p><strong>What I Learned:</strong> Financial success is a lagging indicator; true retail growth depends on optimizing internal processes and customer trust.</p>
+            </div>
+            <div class="project-tags">
+              <span>Balanced Scorecard</span>
+              <span>Excel Modeling</span>
+              <span>Retail KPI Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: HCL Tech Power BI Analytics -->
+        <div class="card card-project-item">
+          <div class="project-header-bar bar-analytics">
+            <span class="proj-cat">BUSINESS INTELLIGENCE</span>
+            <span class="proj-date">2026</span>
+          </div>
+          <div class="project-content">
+            <h4>HCL Tech: Real-Life Enterprise Data Analytics</h4>
+            <span class="proj-client">Certified Project Submission</span>
+            <div class="proj-breakdown">
+              <p><strong>Problem:</strong> Multi-regional sales data scattered across disparate tables requiring relational synthesis and executive visualization.</p>
+              <p><strong>My Role:</strong> Individual Project Contributor. Managed data ingestion, ETL cleaning, relational data modeling, and DAX metric formulation.</p>
+              <p><strong>Output:</strong> Interactive Power BI dashboard with slicers for regional performance, product category drilldowns, and profit variance charts.</p>
+              <p><strong>What I Learned:</strong> Clean data modeling and schema design are 80% of successful business intelligence; visual storytelling drives decision speed.</p>
+            </div>
+            <div class="project-tags">
+              <span>Power BI</span>
+              <span>DAX Measures</span>
+              <span>Data Storytelling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Design Thinking Empathy Mapping -->
+        <div class="card card-project-item">
+          <div class="project-header-bar bar-strategy">
+            <span class="proj-cat">SOCIAL INNOVATION</span>
+            <span class="proj-date">Academic Fieldwork</span>
+          </div>
+          <div class="project-content">
+            <h4>Design Thinking & Grassroots Entrepreneurship</h4>
+            <span class="proj-client">Field-Based Community Project</span>
+            <div class="proj-breakdown">
+              <p><strong>Problem:</strong> Addressing economic vulnerability and lack of livelihood sustainability within an underprivileged community.</p>
+              <p><strong>My Role:</strong> Field Investigator & Strategy Designer. Conducted in-depth, in-person empathy interviews and mapped community pain points.</p>
+              <p><strong>Output:</strong> Grassroots empathy maps, problem formulation canvases, and a low-capital micro-entrepreneurial business model blueprint.</p>
+              <p><strong>What I Learned:</strong> Sustainable business models must arise from genuine user empathy rather than assumed top-down solutions.</p>
+            </div>
+            <div class="project-tags">
+              <span>Empathy Mapping</span>
+              <span>Design Thinking</span>
+              <span>Social Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Social Media Marketing & Brand Engagement -->
+        <div class="card card-project-item">
+          <div class="project-header-bar bar-marketing">
+            <span class="proj-cat">DIGITAL MARKETING RESEARCH</span>
+            <span class="proj-date">DSMM Coursework</span>
+          </div>
+          <div class="project-content">
+            <h4>Effectiveness of Social Media Marketing on Brand Engagement</h4>
+            <span class="proj-client">Quantitative Research Project</span>
+            <div class="proj-breakdown">
+              <p><strong>Problem:</strong> Quantifying how different social media advertising formats influence active consumer engagement and purchase intent.</p>
+              <p><strong>My Role:</strong> Primary Researcher. Structured questionnaire, surveyed target audiences, analyzed CTR, engagement rates, and brand affinity.</p>
+              <p><strong>Output:</strong> Comprehensive research presentation and analytical report mapping the engagement-to-conversion funnel.</p>
+              <p><strong>What I Learned:</strong> Interactive short-form video and authentic storytelling generate significantly higher organic recall than static product ads.</p>
+            </div>
+            <div class="project-tags">
+              <span>Consumer Insights</span>
+              <span>CTR Modeling</span>
+              <span>Brand Affinity</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: CASE STUDIES (Context, Approach, Evidence, Recommendations) -->
+    <section class="content-section" id="case-studies">
+      <div class="section-header work-header">
+        <h3 class="section-title">CASE STUDIES — INDEPENDENT STRATEGIC ANALYSES</h3>
+        <span class="view-more-tag">Independently Analysed Company Cases</span>
+      </div>
+
+      <div class="case-studies-grid">
+        
+        <!-- Case Study 1: Lenskart SEO & Digital Visibility -->
+        <div class="card case-study-card">
+          <div class="case-study-top">
+            <span class="case-badge">INDEPENDENT DIGITAL ANALYSIS</span>
+            <h4>SEO & Digital Visibility Analysis of Lenskart Using Ubersuggest</h4>
+            <span class="case-context">Context: Digital & Social Media Marketing Coursework • Omnichannel Eyewear Industry</span>
+          </div>
+          <div class="case-study-body">
+            <div class="case-col">
+              <strong>Context & Approach:</strong>
+              <p>Analyzed Lenskart's omnichannel digital acquisition engine using Ubersuggest. Audited organic search traffic, keyword ranking profiles, domain authority, search intent distributions, and backlink networks.</p>
+            </div>
+            <div class="case-col">
+              <strong>Evidence & Findings:</strong>
+              <p>Identified strong dominance in branded search terms ("Lenskart glasses") but high untapped potential in informational queries ("how to choose progressive lenses", "blue light filter science").</p>
+            </div>
+            <div class="case-col">
+              <strong>Recommendations & Learning:</strong>
+              <p>Recommended building educational content clusters and localized geo-targeted landing pages to capture top-of-funnel queries. Learned how SEO data informs commercial category expansion.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Patanjali & Microsoft Competitive Moats -->
+        <div class="card case-study-card">
+          <div class="case-study-top">
+            <span class="case-badge">INDEPENDENT STRATEGIC ANALYSIS</span>
+            <h4>Strategic Moats & Market Disruption: Patanjali Ayurved vs Microsoft</h4>
+            <span class="case-context">Context: Strategic Management Case Study • FMCG Disruption vs Enterprise Tech Ecosystem</span>
+          </div>
+          <div class="case-study-body">
+            <div class="case-col">
+              <strong>Context & Approach:</strong>
+              <p>Conducted a dual-industry comparative evaluation examining how market entry strategies differ between FMCG consumer goods (Patanjali) and global software enterprises (Microsoft). Applied Porter's Five Forces and VRIO models.</p>
+            </div>
+            <div class="case-col">
+              <strong>Evidence & Findings:</strong>
+              <p>Patanjali disrupted incumbent FMCG players via cultural positioning, pricing advantages, and dedicated distribution stores. Microsoft maintained leadership via high enterprise switching costs and ecosystem integration.</p>
+            </div>
+            <div class="case-col">
+              <strong>Recommendations & Learning:</strong>
+              <p>Low-cost disruption requires continuous supply-chain quality control to sustain early wins; enterprise lock-in relies on continuous platform synergies. Learned how distinct competitive moats shape longevity.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3: Beyond Farms Competitor Mapping -->
+        <div class="card case-study-card">
+          <div class="case-study-top">
+            <span class="case-badge">INDEPENDENT MARKET ANALYSIS</span>
+            <h4>Competitor Mapping & Positioning: Beyond Farms in D2C Agri-Food</h4>
+            <span class="case-context">Context: Brand Selection & Market Mapping Assignment • Organic Food Market</span>
+          </div>
+          <div class="case-study-body">
+            <div class="case-col">
+              <strong>Context & Approach:</strong>
+              <p>Mapped direct and indirect competitors in the premium organic food and farm-to-fork D2C ecosystem. Evaluated pricing tiers, packaging strategies, retail shelf placement, and customer acquisition channels.</p>
+            </div>
+            <div class="case-col">
+              <strong>Evidence & Findings:</strong>
+              <p>Found severe saturation in basic organic staples but high margin potential in value-added cold-pressed items and subscription boxes with traceable farm origins.</p>
+            </div>
+            <div class="case-col">
+              <strong>Recommendations & Learning:</strong>
+              <p>Recommended transparent farm-to-table traceability campaigns and tiered loyalty programs to drive repeat subscription orders and elevate customer lifetime value (LTV).</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: IMMERSIONS (Industry, Academic & Social) -->
+    <section class="content-section" id="immersions">
+      <div class="section-header">
+        <h3 class="section-title">IMMERSION EXPERIENCES — ACADEMIC & SOCIAL</h3>
+      </div>
+
+      <div class="immersions-grid">
+        
+        <div class="card immersion-card">
+          <div class="immersion-badge">EXECUTIVE ACADEMIC IMMERSION</div>
+          <h4>IIM Sirmaur Immersion Program</h4>
+          <span class="immersion-meta">Indian Institute of Management Sirmaur • 1-Week Executive Program</span>
+          <p>
+            <strong>Where I Went:</strong> IIM Sirmaur campus, Himachal Pradesh.<br />
+            <strong>What I Observed:</strong> Experienced premier business school pedagogy, engaging in advanced decision-simulation workshops, behavioral economics discussions, and leadership case competitions with peers from across the country.<br />
+            <strong>How It Influenced Me:</strong> Elevated my thinking from tactical day-to-day operations to macro corporate strategy, sharpening my ability to communicate complex insights under competitive pressure.
+          </p>
+        </div>
+
+        <div class="card immersion-card">
+          <div class="immersion-badge">COMMUNITY & SOCIAL IMMERSION</div>
+          <h4>Grassroots Community & Rural Immersion</h4>
+          <span class="immersion-meta">Field-Based Empathy Mapping • Design Thinking Curriculum</span>
+          <p>
+            <strong>Where I Went:</strong> Underprivileged rural and peri-urban community settlement.<br />
+            <strong>What I Observed:</strong> Documented daily livelihood struggles, informal credit dependencies, and practical resource barriers faced by families and local micro-traders.<br />
+            <strong>How It Influenced Me:</strong> Instilled deep respect for ground-level economic realities. Reinforced my commitment to building sustainable, ethical business solutions that create genuine shared value.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: COMPETITIONS & ACHIEVEMENTS -->
+    <section class="content-section" id="competitions">
+      <div class="section-header">
+        <h3 class="section-title">COMPETITIONS, ACHIEVEMENTS & MILESTONES</h3>
+      </div>
+
+      <div class="achievements-grid">
+        
+        <div class="card achievement-card">
+          <div class="achieve-icon">🏆</div>
+          <div class="achieve-content">
+            <h4>ITC Limited Summer Internship Selection</h4>
+            <span class="achieve-sub">Competitive Corporate Internship Placement (2026)</span>
+            <p>Selected for ITC’s competitive sales internship program in the Personal Care Products division, successfully delivering field market surveys and the "Reduction in Bronze Stockists" project.</p>
+          </div>
+        </div>
+
+        <div class="card achievement-card">
+          <div class="achieve-icon">📜</div>
+          <div class="achieve-content">
+            <h4>KPMG Lean Six Sigma Certification</h4>
+            <span class="achieve-sub">Process Improvement & Statistical Problem Solving</span>
+            <p>Completed intensive 5-day certification course by KPMG, mastering DMAIC problem-solving frameworks, root-cause investigation, and waste elimination techniques.</p>
+          </div>
+        </div>
+
+        <div class="card achievement-card">
+          <div class="achieve-icon">🎯</div>
+          <div class="achieve-content">
+            <h4>IIM Sirmaur Immersion Cohort Selection</h4>
+            <span class="achieve-sub">Academic Excellence & Leadership Milestone</span>
+            <p>Selected to represent IILM University at the 1-week academic immersion program at IIM Sirmaur, participating in advanced strategic management masterclasses.</p>
+          </div>
+        </div>
+
+        <div class="card achievement-card">
+          <div class="achieve-icon">💻</div>
+          <div class="achieve-content">
+            <h4>HCL Tech Analytics Real-Life Project Completion</h4>
+            <span class="achieve-sub">Technical Business Intelligence Certification</span>
+            <p>Designed and submitted a production-ready Power BI dashboard and Advanced Excel analysis model evaluated on data modeling integrity and visualization clarity.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: CERTIFICATIONS & CREDENTIALS -->
+    <section class="content-section" id="certifications">
+      <div class="section-header">
+        <h3 class="section-title">CERTIFICATIONS & PROFESSIONAL CREDENTIALS</h3>
+      </div>
+
+      <div class="cert-list">
+        
+        <div class="card cert-card-detailed">
+          <div class="cert-header-line">
+            <div class="cert-badge">KPMG</div>
+            <span class="cert-duration-tag">Completed • 5-Day Intensive Program</span>
+          </div>
+          <h4>Lean Six Sigma Certification Course</h4>
+          <span class="cert-issuer">Issued by: KPMG India</span>
+          <p>
+            Mastered DMAIC (Define, Measure, Analyze, Improve, Control) frameworks, process mapping, statistical variance reduction, waste elimination, and data-backed root cause analysis.
+          </p>
+          <div class="cert-skills-pills">
+            <span>DMAIC Methodology</span>
+            <span>Process Capability</span>
+            <span>Root-Cause Analysis</span>
+            <span>Waste Reduction</span>
+          </div>
+        </div>
+
+        <div class="card cert-card-detailed">
+          <div class="cert-header-line">
+            <div class="cert-badge">HCL</div>
+            <span class="cert-duration-tag">Completed • Real-Life Project Submission</span>
+          </div>
+          <h4>HCL Tech: Power BI & Advanced Excel Course</h4>
+          <span class="cert-issuer">Issued by: HCL Tech</span>
+          <p>
+            Hands-on certification in enterprise business intelligence, dataset ingestion, relational data modeling, DAX measure creation, dynamic pivot modeling, and executive KPI dashboarding.
+          </p>
+          <div class="cert-skills-pills">
+            <span>Power BI</span>
+            <span>DAX Calculations</span>
+            <span>Advanced Excel</span>
+            <span>Data Modeling</span>
+          </div>
+        </div>
+
+        <div class="card cert-card-detailed">
+          <div class="cert-header-line">
+            <div class="cert-badge">IIM</div>
+            <span class="cert-duration-tag">Completed • 1-Week Executive Cohort</span>
+          </div>
+          <h4>Executive Immersion Program — IIM Sirmaur</h4>
+          <span class="cert-issuer">Issued by: Indian Institute of Management Sirmaur</span>
+          <p>
+            Completed rigorous executive management and leadership immersion workshops, exploring competitive strategy, organizational behavior, and data-driven market decision-making.
+          </p>
+          <div class="cert-skills-pills">
+            <span>Strategic Management</span>
+            <span>Executive Leadership</span>
+            <span>Decision Simulation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: ACADEMIC BACKGROUND -->
+    <section class="content-section">
+      <div class="section-header">
+        <h3 class="section-title">ACADEMIC BACKGROUND & EDUCATION</h3>
+      </div>
+      <div class="card card-about">
+        <div class="edu-timeline">
+          
+          <div class="edu-item">
+            <div class="edu-year-badge">2025 – 27</div>
+            <div class="edu-info">
+              <h4>MBA — Marketing & Business Analytics</h4>
+              <span class="edu-inst">IILM University, Greater Noida</span>
+              <span class="edu-status status-active">Pursuing (Roll No: 25SOM2039000019)</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-year-badge">2024</div>
+            <div class="edu-info">
+              <h4>Bachelor of Science (B.Sc.)</h4>
+              <span class="edu-inst">Rajasthan University</span>
+              <span class="edu-score">Score: 58%</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-year-badge">2021</div>
+            <div class="edu-info">
+              <h4>Senior Secondary (12th)</h4>
+              <span class="edu-inst">JD, Sr. Secondary School (RBSE)</span>
+              <span class="edu-score">Score: 63%</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-year-badge">2019</div>
+            <div class="edu-info">
+              <h4>Secondary (10th)</h4>
+              <span class="edu-inst">JD, Sr. Secondary School (RBSE)</span>
+              <span class="edu-score">Score: 50%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonial-box">
+          <p class="testimonial-quote">
+            “ Seeking a career opportunity in the field of Marketing and Analytics while contributing effectively in an organization using my technical skills such as Advanced Excel, Power BI while continuously learning and growing in the field of management. ”
+          </p>
+          <span class="testimonial-author">— Krishan Narayan Sharma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: MY CAREER DIRECTION & DEVELOPMENT GOALS -->
+    <section class="content-section" id="career-direction">
+      <div class="section-header">
+        <h3 class="section-title">MY CAREER DIRECTION & FUTURE ASPIRATIONS</h3>
+      </div>
+
+      <div class="card career-direction-card">
+        <div class="career-dir-grid">
+          <div class="career-dir-col">
+            <h4 class="sub-heading">TARGET ROLES & DOMAINS</h4>
+            <p>
+              I am actively targeting roles as a <strong>Management Trainee (Sales & Marketing)</strong>, <strong>Business/Marketing Analyst</strong>, <strong>Category Growth Associate</strong>, or <strong>Area Sales Executive Trainee</strong> within FMCG, retail, or data-driven commercial enterprises.
+            </p>
+            <p>
+              <strong>What attracts me:</strong> The tangible impact of sales and analytics. In consumer goods and modern retail, small improvements in stockist availability, pricing schemes, or shelf visibility yield substantial top-line gains. I thrive at the junction where data directly touches the commercial marketplace.
+            </p>
+          </div>
+
+          <div class="career-dir-col">
+            <h4 class="sub-heading">NEXT DEVELOPMENT GOALS</h4>
+            <ul class="itc-bullets">
+              <li><strong>Advanced Python for Analytics:</strong> Deepening mastery in pandas, numpy, and automated data pipelines for predictive sales forecasting.</li>
+              <li><strong>Google Analytics 4 (GA4) Certification:</strong> Completing official Google Analytics certification to integrate web behavior with offline retail funnels.</li>
+              <li><strong>SQL Database Modeling:</strong> Strengthening relational database querying to manipulate enterprise datasets at scale.</li>
+              <li><strong>Leadership in Field Sales Teams:</strong> Building team management skills to coach frontline distributor sales representatives.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: RESUME HUB -->
+    <section class="content-section" id="resume">
+      <div class="section-header">
+        <h3 class="section-title">RESUME — VIEW & DOWNLOAD</h3>
+      </div>
+
+      <div class="card resume-hub-card">
+        <div class="resume-hub-left">
+          <div class="resume-icon">📄</div>
+          <div>
+            <h4>KRISHAN NARAYAN SHARMA — CURRICULUM VITAE</h4>
+            <p>Verified academic records, ITC Summer Internship details, KPMG Lean Six Sigma credentials, and technical project references.</p>
+            <span class="resume-date">Current & Up to Date • PDF Format (172 KB)</span>
+          </div>
+        </div>
+        <div class="resume-hub-actions">
+          <a href="Krishan_Narayan_Sharma_CV.pdf" target="_blank" class="btn-secondary-outline">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            VIEW RESUME
+          </a>
+          <a href="Krishan_Narayan_Sharma_CV.pdf" download="Krishan_Narayan_Sharma_CV.pdf" class="btn-primary-glow">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            DOWNLOAD PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assignment Requirement: Analytics & Privacy Notice -->
+    <section class="content-section privacy-notice-section">
+      <div class="card privacy-card">
+        <h5>ANALYTICS SETUP & TRANSPARENCY NOTICE</h5>
+        <p>
+          This personal portfolio is created as an academic assignment for the <strong>Digital and Social Media Marketing (DSMM)</strong> course (MBA Semester III, IILM University, under faculty guidance of Dr. Pooja Sharma). To measure site engagement and study user navigation flows, this website is integrated with <strong>Google Analytics 4 (GA4)</strong> and verified on <strong>Google Search Console</strong>. No sensitive personal visitor data or passwords are collected. All internship data reflects public and mentor-approved academic summaries.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FOOTER & CONTACT -->
+    <footer class="content-section footer-section" id="contact">
+      <div class="footer-top">
+        <div class="footer-left">
+          <h3 class="footer-cta-title">LET'S CONNECT</h3>
+          <p class="footer-subtitle">Open for management trainee programs, sales & marketing roles, and business analytics opportunities.</p>
+          <div class="contact-links-grid">
+            <a href="mailto:krishan.narayan.gnmba27@iilm.edu" class="contact-action-link">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <span class="link-label">PROFESSIONAL EMAIL</span>
+                <span class="link-val">krishan.narayan.gnmba27@iilm.edu ↗</span>
+              </div>
+            </a>
+            <a href="tel:7296809944" class="contact-action-link">
+              <span class="contact-icon">📞</span>
+              <div>
+                <span class="link-label">PHONE NUMBER</span>
+                <span class="link-val">+91 7296809944 ↗</span>
+              </div>
+            </a>
+            <div class="contact-action-link">
+              <span class="contact-icon">🏛️</span>
+              <div>
+                <span class="link-label">CAMPUS AFFILIATION</span>
+                <span class="link-val">IILM University, Knowledge Park II, Greater Noida (2025–27)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <span class="qr-heading">QUICK REACH</span>
+          <div class="qr-badges-wrap">
+            <div class="qr-card">
+              <div class="qr-code-box">
+                <!-- SVG simulated QR code matrix -->
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor">
+                  <rect x="5" y="5" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="9" y="9" width="8" height="8"/>
+                  <rect x="39" y="5" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="43" y="9" width="8" height="8"/>
+                  <rect x="5" y="39" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="9" y="43" width="8" height="8"/>
+                  <rect x="25" y="6" width="4" height="4"/><rect x="25" y="16" width="4" height="4"/>
+                  <rect x="6" y="25" width="4" height="4"/><rect x="16" y="25" width="4" height="4"/>
+                  <rect x="25" y="25" width="10" height="10"/>
+                  <rect x="38" y="25" width="5" height="5"/><rect x="48" y="25" width="6" height="4"/>
+                  <rect x="26" y="39" width="6" height="6"/><rect x="38" y="38" width="6" height="6"/>
+                  <rect x="48" y="46" width="6" height="8"/><rect x="38" y="48" width="6" height="6"/>
+                </svg>
+              </div>
+              <span class="qr-label">CONTACT QR</span>
+            </div>
+
+            <div class="qr-card">
+              <div class="qr-code-box">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor">
+                  <rect x="5" y="5" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="9" y="9" width="8" height="8"/>
+                  <rect x="39" y="5" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="43" y="9" width="8" height="8"/>
+                  <rect x="5" y="39" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="9" y="43" width="8" height="8"/>
+                  <rect x="28" y="8" width="4" height="6"/><rect x="31" y="18" width="4" height="4"/>
+                  <rect x="8" y="28" width="4" height="5"/><rect x="18" y="28" width="5" height="4"/>
+                  <rect x="26" y="26" width="8" height="8"/>
+                  <rect x="40" y="26" width="5" height="5"/><rect x="48" y="30" width="5" height="4"/>
+                  <rect x="26" y="42" width="6" height="6"/><rect x="38" y="42" width="6" height="6"/>
+                  <rect x="48" y="44" width="6" height="10"/><rect x="36" y="50" width="8" height="4"/>
+                </svg>
+              </div>
+              <span class="qr-label">IILM PROFILE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="tagline">KRISHAN NARAYAN SHARMA • DIGITAL & SOCIAL MEDIA MARKETING PORTFOLIO (MBA SEMESTER III).</span>
+        <span class="copyright">© 2026 Krishan Narayan Sharma. Evaluated by Dr. Pooja Sharma, IILM University.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
